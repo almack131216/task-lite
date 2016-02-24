@@ -1,0 +1,40 @@
+/* Panels */
+.panel-red {border-color:$red-color;}
+.panel-amber {border-color:$amber-color;}
+.panel-green {border-color:$green-color;}
+.panel-green2 {border-color:$green2-color;}
+
+.diffDisc{
+    @include border-radius(5px);
+    background:rgba(0, 0, 0, 0.15);
+}
+
+.panel {
+
+    .txtWrap {
+        display:inline-block;
+        
+        .huge {margin-bottom:5px;}
+    }
+    .diffDisc {        
+        float: right;
+        display: inline-block;
+        min-width:20px;
+        line-height: 15px;
+        text-align: center;
+        padding: 5px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #fff;
+        margin-left: 10px;
+    }
+    
+    
+    .pagination {margin-top:0;}
+
+    
+}
+
+.panel-red .diffDisc.flatWhite {color:#d9534f;}
+.panel-yellow .diffDisc.flatWhite {color:#f0ad4e;}
+.panel-green .diffDisc.flatWhite {color:#5cb85c;}

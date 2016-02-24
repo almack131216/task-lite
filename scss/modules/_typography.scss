@@ -1,0 +1,70 @@
+/* Typography */
+
+/* icons */
+.fa-2{font-size:18px;}
+.fa-3{font-size:24px;}
+.fa-4{font-size:27px;}
+.fa-5{font-size:35px;}
+.fa-6{font-size:40px;}
+
+.fa-primary {
+    color:$primary-color;
+}
+
+.fa-border {
+    @include add-border(1px,$primary-color,all);
+    @include border-radius(5px);
+    padding:13px 15px;
+    width:70px;
+    margin-bottom:10px;
+}
+
+/* headings */
+.heading-primary {
+    color:$primary-color;
+}
+.heading-primary-a {
+    @extend .heading-primary;
+    @include add-border(2px,$primary-color,bottom);
+}
+
+.heading-secondary {
+    color:$secondary-color;
+}
+.heading-secondary-a {
+    @extend .heading-secondary;
+    @include add-border(2px,$secondary-color,bottom);
+}
+
+.heading-light {
+    color:$light-color;
+}
+.heading-light-a {
+    @extend .light-color;
+    @include add-border(2px,$light-color,bottom);
+}
+
+.heading-dark {
+    color:$dark-color;
+}
+.heading-dark-a {
+    @extend .heading-dark;
+    @include add-border(2px,$dark-color,bottom);
+}
+
+/* Emphasis text */
+.em-primary {
+    color:$primary-color;
+}
+
+.em-secondary {
+    color:$secondary-color;
+}
+
+.em-light {
+    color:$light-color;
+}
+
+.em-dark {
+    color:$dark-color;
+}

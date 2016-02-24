@@ -1,0 +1,41 @@
+/* base */
+
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-font-line-height;
+    color:$base-font-color;
+}
+
+a {
+    color:$primary-color;
+}
+a.active, a.active:hover, a.active:focus {
+    background:$active-background !important;
+    border-color:$active-background !important;
+    color:#fff !important;
+}
+
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default,
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    color: #333;
+    background-color: #eee;
+    border-color: #adadad;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+
+ul,li {list-style: none;}
+
+input,textarea,button{
+    @include border-radius(0px);
+}
+
+img.device {
+    width:100%;
+}
+
+img.device-small {
+    width:70%;
+    margin-bottom:-40px;
+}

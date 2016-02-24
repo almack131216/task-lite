@@ -1,0 +1,47 @@
+/* Mobile */
+
+/* sm */
+@media (max-width: 991px) and (min-width: 768px){
+    .fa-textAfter-sm:after {font-family: $base-font-family;content:attr(fa-textAfter) !important;margin-left:$offset-1;}
+    
+    
+}
+
+/* xs */
+@media (max-width:768px){
+    .search {
+        display:inline-block;
+        text-align:center;
+    }
+    
+    
+    .device {
+        display:block;
+        margin:20px auto 0 auto;
+    }
+    
+    .device-small {
+        margin-bottom:20px !important;
+    }
+    
+    
+    .footer-main {
+        
+        ul {
+            margin-bottom:20px;
+            text-align:center;        
+        }
+        
+        h4 {text-align:center;}
+        
+    }
+    
+
+    .fa-textAfter-xs:after {font-family: $base-font-family;content:attr(fa-textAfter) !important;margin-left:10px;}
+
+    
+}
+
+@media (max-width:640px){
+    .ng-table-counts {display:none !important;}
+}

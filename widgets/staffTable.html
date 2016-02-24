@@ -1,0 +1,41 @@
+<div class="panel panel-default panelTable">
+    <div class="panel-heading">
+        <span ng-bind="users.length"></span> Employees
+        <button type="button" class="btn btn-default btn-xs pull-right">
+            <i class="fa fa-plus"></i> Add Employee
+        </button>
+    </div>
+    <!-- /.panel-heading -->
+
+
+    <div class="panel-body">
+
+
+    <a href="#"><i class="fa fa-users fa-fw fa-textAfter-xs" fa-textafter="All"></i><span class="margin-left-1 hidden-sm hidden-xs ng-binding">View All Users</span></a>
+      <form class="pull-right">
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon"><i class="fa fa-search"></i></div>
+            <input type="text" class="form-control" placeholder="Search for..." ng-model="searchStaff">
+          </div>      
+        </div>
+      </form>
+
+
+
+      <table ng-table="usersTable" class="table table-bordered table-striped paginationTop" wt-responsive-table>
+          <tr ng-repeat="user in data | filter:searchStaff">
+            <td data-title="'ID'"  data-title-rt="ID" sortable="'id'"><a href="#" title="View {{ user.first_name + ' ' + user.last_name }} details"><span ng-bind="user.id"></span></a></td>
+            <td data-title="'First Name'" data-title-rt="First Name" sortable="'first_name'" ts-default><span ng-bind="user.first_name"></span></td>
+            <td data-title="'Last Name'" data-title-rt="Last Name" sortable="'last_name'"><span ng-bind="user.last_name"></span></td>
+            <td data-title="'Email'" data-title-rt="Email" sortable="'email'"><a href="mailto:{{ user.email }}" title="Send an email to {{ user.first_name + ' ' + user.last_name }}"><i class="fa fa-envelope-o fa-textAfter-xs" fa-textAfter="Email"></i><span ng-bind="user.email" class="margin-left-1 hidden-sm hidden-xs"></span></a></td>
+              <td data-title="'Edit'" data-title-rt="Edit"><a href="#" title="Edit {{ user.first_name + ' ' + user.last_name }}"><i class="fa fa-edit fa-textAfter-xs" fa-textAfter="Edit"></i><span class="margin-left-1 hidden-sm hidden-xs">Edit</span></a></td>
+          </tr>
+      </table>
+
+
+    </div>
+
+    <!-- /.panel-body -->
+</div>
+<!-- /.panel -->

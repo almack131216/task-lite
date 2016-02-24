@@ -1,0 +1,19 @@
+/* Tables */
+
+th {}
+.ng-table th .ng-table-header {text-align: left;}
+
+.panelTable .form-group {max-width:200px;}
+
+@media only screen and (max-width: 800px){
+    
+    .responsive tr {border-color:$border-color-default;}
+    .table-striped>tbody>tr:nth-of-type(odd) {background-color:$background-color-odd;}
+
+    
+    .responsive td:nth-child(even)::before,
+    .responsive td:nth-child(odd)::before {
+        content:attr(data-title-rt) !important;
+    }
+}
+

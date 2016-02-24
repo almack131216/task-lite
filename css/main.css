@@ -1,0 +1,388 @@
+/*
+Skyapp Bootstrap Sass Theme
+Author: Me
+Version: 0.0.1
+*/
+/* BASE - base styles, variables, mixins etc */
+/* Font colors */
+/* Background colors */
+/* Table colors */
+/* showcase area */
+/* offset: margins & paddings */
+/* Mixins */
+/* Normalize */
+/* line 3, ../scss/base/_normalize.scss */
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+}
+
+/* line 7, ../scss/base/_normalize.scss */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 9, ../scss/base/_normalize.scss */
+.page-header {
+  margin-top: 30px;
+}
+
+/* line 13, ../scss/base/_normalize.scss */
+.no-pad-top {
+  padding-top: 0;
+}
+
+/* line 17, ../scss/base/_normalize.scss */
+.extra-pad {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* line 22, ../scss/base/_normalize.scss */
+.top-inner {
+  padding: 90px 0 30px;
+}
+
+/* line 26, ../scss/base/_normalize.scss */
+.img-xsm {
+  width: 100px;
+}
+
+/* line 27, ../scss/base/_normalize.scss */
+.img-sm {
+  width: 200px;
+}
+
+/* line 28, ../scss/base/_normalize.scss */
+.img-lg {
+  width: 400px;
+}
+
+/* line 29, ../scss/base/_normalize.scss */
+.img-xlg {
+  width: 700px;
+}
+
+/* base */
+/* line 3, ../scss/base/_base.scss */
+body {
+  font-family: "Segoe UI", "Segoe WP", "Segoe Regular", sans-serif;
+  font-size: 15px;
+  line-height: 1.7em;
+  color: #666666;
+}
+
+/* line 10, ../scss/base/_base.scss */
+a {
+  color: #00aff0;
+}
+
+/* line 13, ../scss/base/_base.scss */
+a.active, a.active:hover, a.active:focus {
+  background: #666666 !important;
+  border-color: #666666 !important;
+  color: #fff !important;
+}
+
+/* line 20, ../scss/base/_base.scss */
+.btn-default.active, .btn-default:active, .open > .dropdown-toggle.btn-default,
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+  color: #333;
+  background-color: #eee;
+  border-color: #adadad;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 28, ../scss/base/_base.scss */
+ul, li {
+  list-style: none;
+}
+
+/* line 30, ../scss/base/_base.scss */
+input, textarea, button {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+/* line 34, ../scss/base/_base.scss */
+img.device {
+  width: 100%;
+}
+
+/* line 38, ../scss/base/_base.scss */
+img.device-small {
+  width: 70%;
+  margin-bottom: -40px;
+}
+
+/* MODULES - individual site components */
+/* Typography */
+/* icons */
+/* line 4, ../scss/modules/_typography.scss */
+.fa-2 {
+  font-size: 18px;
+}
+
+/* line 5, ../scss/modules/_typography.scss */
+.fa-3 {
+  font-size: 24px;
+}
+
+/* line 6, ../scss/modules/_typography.scss */
+.fa-4 {
+  font-size: 27px;
+}
+
+/* line 7, ../scss/modules/_typography.scss */
+.fa-5 {
+  font-size: 35px;
+}
+
+/* line 8, ../scss/modules/_typography.scss */
+.fa-6 {
+  font-size: 40px;
+}
+
+/* line 10, ../scss/modules/_typography.scss */
+.fa-primary {
+  color: #00aff0;
+}
+
+/* line 14, ../scss/modules/_typography.scss */
+.fa-border {
+  border: 1px solid #00aff0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 13px 15px;
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+/* headings */
+/* line 23, ../scss/modules/_typography.scss */
+.heading-primary, .heading-primary-a {
+  color: #00aff0;
+}
+
+/* line 26, ../scss/modules/_typography.scss */
+.heading-primary-a {
+  border-bottom: 2px solid #00aff0;
+}
+
+/* line 31, ../scss/modules/_typography.scss */
+.heading-secondary, .heading-secondary-a {
+  color: #7fba00;
+}
+
+/* line 34, ../scss/modules/_typography.scss */
+.heading-secondary-a {
+  border-bottom: 2px solid #7fba00;
+}
+
+/* line 39, ../scss/modules/_typography.scss */
+.heading-light {
+  color: #e4eef2;
+}
+
+/* line 42, ../scss/modules/_typography.scss */
+.heading-light-a {
+  border-bottom: 2px solid #e4eef2;
+}
+
+/* line 47, ../scss/modules/_typography.scss */
+.heading-dark, .heading-dark-a {
+  color: #2b5464;
+}
+
+/* line 50, ../scss/modules/_typography.scss */
+.heading-dark-a {
+  border-bottom: 2px solid #2b5464;
+}
+
+/* Emphasis text */
+/* line 56, ../scss/modules/_typography.scss */
+.em-primary {
+  color: #00aff0;
+}
+
+/* line 60, ../scss/modules/_typography.scss */
+.em-secondary {
+  color: #7fba00;
+}
+
+/* line 64, ../scss/modules/_typography.scss */
+.em-light {
+  color: #e4eef2;
+}
+
+/* line 68, ../scss/modules/_typography.scss */
+.em-dark {
+  color: #2b5464;
+}
+
+/* Panels */
+/* line 2, ../scss/modules/_panels.scss */
+.panel-red {
+  border-color: #ff6600;
+}
+
+/* line 3, ../scss/modules/_panels.scss */
+.panel-amber {
+  border-color: #ff9900;
+}
+
+/* line 4, ../scss/modules/_panels.scss */
+.panel-green {
+  border-color: light-green;
+}
+
+/* line 5, ../scss/modules/_panels.scss */
+.panel-green2 {
+  border-color: dark-green;
+}
+
+/* line 7, ../scss/modules/_panels.scss */
+.diffDisc {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* line 14, ../scss/modules/_panels.scss */
+.panel .txtWrap {
+  display: inline-block;
+}
+/* line 17, ../scss/modules/_panels.scss */
+.panel .txtWrap .huge {
+  margin-bottom: 5px;
+}
+/* line 19, ../scss/modules/_panels.scss */
+.panel .diffDisc {
+  float: right;
+  display: inline-block;
+  min-width: 20px;
+  line-height: 15px;
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 10px;
+}
+/* line 33, ../scss/modules/_panels.scss */
+.panel .pagination {
+  margin-top: 0;
+}
+
+/* line 38, ../scss/modules/_panels.scss */
+.panel-red .diffDisc.flatWhite {
+  color: #d9534f;
+}
+
+/* line 39, ../scss/modules/_panels.scss */
+.panel-yellow .diffDisc.flatWhite {
+  color: #f0ad4e;
+}
+
+/* line 40, ../scss/modules/_panels.scss */
+.panel-green .diffDisc.flatWhite {
+  color: #5cb85c;
+}
+
+/* Tables */
+/* line 4, ../scss/modules/_tables.scss */
+.ng-table th .ng-table-header {
+  text-align: left;
+}
+
+/* line 6, ../scss/modules/_tables.scss */
+.panelTable .form-group {
+  max-width: 200px;
+}
+
+@media only screen and (max-width: 800px) {
+  /* line 10, ../scss/modules/_tables.scss */
+  .responsive tr {
+    border-color: #dddddd;
+  }
+
+  /* line 11, ../scss/modules/_tables.scss */
+  .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+  }
+
+  /* line 15, ../scss/modules/_tables.scss */
+  .responsive td:nth-child(even)::before,
+  .responsive td:nth-child(odd)::before {
+    content: attr(data-title-rt) !important;
+  }
+}
+/* LAYOUTS - page layout styles */
+/* Nav */
+/* Mobile */
+/* sm */
+@media (max-width: 991px) and (min-width: 768px) {
+  /* line 5, ../scss/layouts/_mobile.scss */
+  .fa-textAfter-sm:after {
+    font-family: "Segoe UI", "Segoe WP", "Segoe Regular", sans-serif;
+    content: attr(fa-textAfter) !important;
+    margin-left: 10px;
+  }
+}
+/* xs */
+@media (max-width: 768px) {
+  /* line 12, ../scss/layouts/_mobile.scss */
+  .search {
+    display: inline-block;
+    text-align: center;
+  }
+
+  /* line 18, ../scss/layouts/_mobile.scss */
+  .device {
+    display: block;
+    margin: 20px auto 0 auto;
+  }
+
+  /* line 23, ../scss/layouts/_mobile.scss */
+  .device-small {
+    margin-bottom: 20px !important;
+  }
+
+  /* line 30, ../scss/layouts/_mobile.scss */
+  .footer-main ul {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  /* line 35, ../scss/layouts/_mobile.scss */
+  .footer-main h4 {
+    text-align: center;
+  }
+
+  /* line 40, ../scss/layouts/_mobile.scss */
+  .fa-textAfter-xs:after {
+    font-family: "Segoe UI", "Segoe WP", "Segoe Regular", sans-serif;
+    content: attr(fa-textAfter) !important;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 640px) {
+  /* line 46, ../scss/layouts/_mobile.scss */
+  .ng-table-counts {
+    display: none !important;
+  }
+}
+/* Offsets */
+/* line 2, ../scss/layouts/_offsets.scss */
+.margin-left-1 {
+  margin-left: 10px;
+}
+
+/* line 5, ../scss/layouts/_offsets.scss */
+.margin-right-1 {
+  margin-right: 10px;
+}
