@@ -1,5 +1,5 @@
 /*
-Skyapp Bootstrap Sass Theme
+Task Sass Theme
 Author: Me
 Version: 0.0.1
 */
@@ -14,11 +14,6 @@ Version: 0.0.1
 
 /* MODULES - individual site components */
 @import 'modules/_typography.scss';
-//@import 'modules/_blocks.scss';
-//@import 'modules/_buttons.scss';
-//@import 'modules/_sections.scss';
-//@import 'modules/_components.scss';
-//@import 'modules/_forms.scss';
 @import 'modules/_panels.scss';
 @import 'modules/_tables.scss';
 
@@ -26,9 +21,5 @@ Version: 0.0.1
 
 /* LAYOUTS - page layout styles */
 @import 'layouts/_nav.scss';
-//@import 'layouts/_header.scss';
-//@import 'layouts/_footer.scss';
-//@import 'layouts/_img.scss';
-//@import 'layouts/_blog.scss';
 @import 'layouts/_mobile.scss';
 @import 'layouts/_offsets.scss';
